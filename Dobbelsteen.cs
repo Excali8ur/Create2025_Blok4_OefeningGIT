@@ -40,6 +40,7 @@ namespace Create_Dobbelsteen_Demo //Nino was hier!
         public string naam;
         public string vorm;
         public string materiaal;
+        public bool edited;
         public string test;
 
         //private static Random willekeurigewaarde = new Random();
