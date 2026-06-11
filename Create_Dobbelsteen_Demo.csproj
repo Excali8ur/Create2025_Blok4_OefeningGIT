@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Beker.cs" />
     <Compile Include="Dobbelsteen.cs" />
+    <Compile Include="models\Dice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
