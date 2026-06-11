@@ -32,7 +32,7 @@ namespace Create_Dobbelsteen_Demo
             dobbelstenen = new List<Dobbelsteen>();
             for (int i = 0; i < aantalDobbelstenen; i++)
             {
-                Dobbelsteen d = new Dobbelsteen();
+                Dobbelsteen d = new Dobbelsteen(5);
                 dobbelstenen.Add(d);
             }
 
@@ -40,7 +40,7 @@ namespace Create_Dobbelsteen_Demo
 
         public void VoegDobbelsteenToe()
         {
-            Dobbelsteen d = new Dobbelsteen();
+            Dobbelsteen d = new Dobbelsteen(9);
             dobbelstenen.Add(d);
         }
 
