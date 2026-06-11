@@ -53,9 +53,9 @@ namespace Create_Dobbelsteen_Demo //Nino was hier!
             willekeurigewaarde = new Random(seed);
 
             naam = "Standaard dobbelsteen";
-            zijden = 6;
+            zijden = 8;
             kleur = "blauw";
-            waarden = new List<int> { 1, 2, 3, 4, 5, 6 };
+            waarden = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8};
             materiaal = "Plastic";
             vorm = "Kubus";
         }
