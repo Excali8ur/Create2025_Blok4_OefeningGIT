@@ -10,7 +10,7 @@ namespace Create_Dobbelsteen_Demo
     {
         static void Main(string[] args)
         {
-            Beker beker = new Beker(30);
+            Beker beker = new Beker(100);
 
             List<int> worpen = beker.RolDobbelstenen();
             Console.WriteLine(worpen.Count > 0 ? string.Join(" - ", worpen) : "Beker is leeg");
