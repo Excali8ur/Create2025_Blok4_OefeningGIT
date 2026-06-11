@@ -3,62 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Reisbureau.DataAccess;
+using Reisbureau.Models;
 
-namespace Create_Dobbelsteen_Demo
+namespace Reisbureau
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Beker beker = new Beker(100);
+            DalSQL dalSQL = new DalSQL(".", "Reisbureau");
 
-            List<int> worpen = beker.RolDobbelstenen();
-            Console.WriteLine(worpen.Count > 0 ? string.Join(" - ", worpen) : "Beker is leeg");
+            string uitkomst = dalSQL.OphalenKlant(56955);
 
-            Beker legeBeker = new Beker();
-            worpen = legeBeker.RolDobbelstenen();
-            Console.WriteLine(worpen.Count > 0 ? string.Join(" - ", worpen) : "Beker is leeg");
+            Console.WriteLine(uitkomst);
 
-            Console.WriteLine("Stan was here");
+            uitkomst = dalSQL.OphalenKlant(56973);
+
+            Console.WriteLine(uitkomst);
 
             /*
-            Dobbelsteen blauweD6 = new Dobbelsteen();
-            Console.WriteLine(blauweD6.naam);
+            Console.WriteLine("Hello, World!");
 
-            blauweD6.naam = "Nieuwe Naam";
-            blauweD6.zijden = 6;
-            blauweD6.kleur = "blauw";
-            blauweD6.waarden = new List<int>{1, 2, 3, 4, 5, 6 };
+            Voorbeeld voorbeeld = new Voorbeeld();
 
-            Console.WriteLine(blauweD6.naam);
+            Console.WriteLine("Geef een getal:");
+            int getal = int.Parse(Console.ReadLine());
 
-            List<int> waardenlijst = new List<int>() { 1, 2, 3, 4};
-            Dobbelsteen rodeD4 = new Dobbelsteen(4, waardenlijst, "Roze", "Kaassoufle");
-            
-            int zijden = 20;
-            Dobbelsteen myLuckyDice = new Dobbelsteen(zijden, 1, 20);
-            myLuckyDice.naam = "Lucky";
-            myLuckyDice.vorm = "Polydice";
-            myLuckyDice.materiaal = "Plastic";
-            myLuckyDice.kleur = "Donkerpaars met goud";
+            voorbeeld.Getal = getal;
 
-            Console.WriteLine(myLuckyDice.Print());    
+            Console.WriteLine(voorbeeld.Tekst);
+            voorbeeld.PasTekstAan("Nieuwe Tekst...");
+            Console.WriteLine(voorbeeld.Tekst);
             */
-
-            /*
-            //Oefening met Random
-            Random dobbelsteen1 = new Random(DateTime.Now.Millisecond);
-            Random dobbelsteen2 = new Random(DateTime.Now.Millisecond);
-
-            int i = 1;
-            while (i <= 30)
-            {
-                Console.WriteLine($"Het {i}e getal is: {dobbelsteen1.Next(1, 7)}");
-                Console.WriteLine($"Het {i}e getal is: {dobbelsteen2.Next(1, 7)}");
-                Console.WriteLine("*****");
-                i++;
-            }*/
-
         }
     }
 }
