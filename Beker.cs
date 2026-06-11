@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 namespace Create_Dobbelsteen_Demo
 {
     public class Beker
+
+        //hallo test test :P
+
     {
         private List<Dobbelsteen> dobbelstenen;
 
