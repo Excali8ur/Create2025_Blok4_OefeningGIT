@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Create_Dobbelsteen_Demo
+namespace Create_Dobbelsteen_Demo //Nino was hier!
 {
     public class Dobbelsteen
     {
@@ -41,6 +41,7 @@ namespace Create_Dobbelsteen_Demo
         public string vorm;
         public string materiaal;
         public bool edited;
+        public string test;
 
         //private static Random willekeurigewaarde = new Random();
         private Random willekeurigewaarde = new Random();
