@@ -19,6 +19,8 @@ namespace Create_Dobbelsteen_Demo
             worpen = legeBeker.RolDobbelstenen();
             Console.WriteLine(worpen.Count > 0 ? string.Join(" - ", worpen) : "Beker is leeg");
 
+            Console.WriteLine("Stan was here");
+
             /*
             Dobbelsteen blauweD6 = new Dobbelsteen();
             Console.WriteLine(blauweD6.naam);
