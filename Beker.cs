@@ -16,6 +16,8 @@ namespace Create_Dobbelsteen_Demo
         /// <summary>
         /// Maak een lege beker aan
         /// </summary>
+
+	    // Kasper was hier
         public Beker()
         {
             dobbelstenen = new List<Dobbelsteen>();
