@@ -7,12 +7,17 @@ using System.Threading.Tasks;
 namespace Create_Dobbelsteen_Demo
 {
     public class Beker
+
+        //hallo test test :P
+
     {
         private List<Dobbelsteen> dobbelstenen;
 
         /// <summary>
         /// Maak een lege beker aan
         /// </summary>
+
+	    // Kasper was hier
         public Beker()
         {
             dobbelstenen = new List<Dobbelsteen>();
